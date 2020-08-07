@@ -48,13 +48,13 @@ public class Comment {
 
     @Builder
     public Comment(String id, Integer mentionId, String name, String content, boolean deleted,
-                   LocalDateTime createdAt, LocalDateTime deletedAt){
+                   LocalDateTime deletedAt){
         this.id = id;
         this.mentionId = mentionId;
         this.name = name;
         this.content = content;
         this.deleted = deleted;
-        this.createdAt = createdAt;
+        this.createdAt = LocalDateTime.now();
         this.deletedAt = deletedAt;
     }
 
